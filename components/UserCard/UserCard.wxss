@@ -1,0 +1,75 @@
+.user-card {
+  height: 220rpx;
+  margin: 10rpx;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  background: #fff;
+
+}
+
+.user-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140rpx;
+}
+
+.user-card-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.user-card-list-item {
+  flex: 1 1 25%;
+  text-align: center;
+  border-right: 2rpx solid whitesmoke;
+  
+}
+.view-left {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.view-right {
+  font-size: 18rpx;
+}
+
+
+.userinfo {
+  flex: 1 1;
+  display: flex;
+  padding: 0 40rpx;
+}
+.userinfo-avatar {
+  width: 140rpx;
+  height: 140rpx;
+  border: 0;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  line-height: 140rpx;
+  margin-left: 20rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #000;
+}
+
+
+.userpage {
+  flex: 0 0 155rpx;
+  text-align: right;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.userpage-text{
+  font-size: 30rpx;
+  color: #aaa;
+  font-weight: 500;
+}
+.userpage-image{
+  width: 25rpx;
+  height: 25rpx;
+}

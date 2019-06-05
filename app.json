@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/main/main",
+    "pages/music/music",
+    "pages/main/quiz/quiz",
+    "pages/home/home",
+    "pages/main/quiz/problem/problem",
+    "pages/main/quiz/write/write",
+    "pages/main/answer-detail/answer-detail",
+    "pages/main/problem-detail/problem-detail",
+    "pages/main/answer-detail/write/write",
+    "pages/main/answer-detail/comment/comment",
+    "pages/main/answer-detail/problem-detail/problem-detail",
+    "pages/main/problem-detail/write/write",
+    "pages/music/playing/playing"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText":"WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "borderStyle":"black",
+    "selectedColor":"#136DFF",
+    "color":"#333",
+    "backgroundColor":"#fff",
+    "position":"bottom",
+    "list":[{
+      "pagePath":"pages/main/main",
+      "text":"首页",
+      "iconPath":"image/icon/mainbar.png",
+      "selectedIconPath":"image/icon/mainbar-1.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "image/icon/music.png",
+        "selectedIconPath": "image/icon/music-1.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "我的",
+        "iconPath": "image/icon/homebar.png",
+        "selectedIconPath": "image/icon/homebar-1.png"
+      }]
+  },
+  "requiredBackgroundModes":["audio"]
+
+}

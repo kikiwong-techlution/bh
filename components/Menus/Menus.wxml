@@ -1,0 +1,10 @@
+
+<!--Menus.wxml-->
+<view class="menus">
+  <view class="menus-list">
+    <view class="menus-list-item" wx:for="{{list}}" wx:key="index" data-index="{{index}}">
+      <image class="menus-list-item-image" src="{{item.icon}}" />
+      <view class="menus-list-item-view">{{item.name}}</view>
+    </view>
+  </view>
+</view>
