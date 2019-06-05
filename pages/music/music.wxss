@@ -1,0 +1,12 @@
+/* pages/music/music.wxss */
+@import "music-item/music-item-tpl.wxss";
+@import "banner-item/banner-item-tpl.wxss";
+.music{
+  width:110rpx;
+  height: 110rpx;
+  position: absolute;
+  left: 50%;
+  margin-left: -51rpx;
+  top: 180rpx;
+  opacity: 0.9;
+}

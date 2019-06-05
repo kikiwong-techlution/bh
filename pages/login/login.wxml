@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="title" bindtap="bindViewTap" >
+    <text>欢迎来到广金乎</text>
+    <text>--这里是大学生吐槽的胜地</text>
+  </view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取头像昵称</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+<view class="member">
+    成员：李雁玫 黄舒琪 廖嘉豪 谢有俊
+</view>

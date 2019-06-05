@@ -1,0 +1,10 @@
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(top,#fdfbfb,#ebedee);
+}
+.banner-container image{
+  width: 500rpx;
+  height: 300rpx;
+}

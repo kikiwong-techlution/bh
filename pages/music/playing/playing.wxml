@@ -1,0 +1,22 @@
+<!--pages/music/playing/playing.wxml-->
+
+<view class="music-con">
+  <view class="content">
+    <text class="t1">{{musicList.title}}</text>
+    <text class="t2">{{musicList.singer}}</text>
+    <image src="{{musicList.coverImg}}"></image>
+  </view>
+  <view class="playing">
+    <!--view>
+      <image class="last" src="https://img.icons8.com/wired/64/000000/circled-left.png"></image>
+    </view-->
+    <view>
+      <image class="start-stop" catchtap="onMusicTap" src="{{isPlayingMusic?'/image/icon/music-stop.png':'/image/icon/music-start.png'}}"></image>
+    </view>
+    <!--view>
+      <image class="next" src="https://img.icons8.com/wired/64/000000/circled-right.png"></image>
+    </view-->
+  
+  </view>
+</view>
+

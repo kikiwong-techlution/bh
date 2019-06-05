@@ -1,0 +1,269 @@
+/* pages/home/home.wxss */
+.con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 70rpx;
+}
+/*搜索框*/
+.search{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  width:94%;
+  height: 65rpx;
+  margin-left: 20rpx;
+  background-color: whitesmoke;
+  margin-top: 10rpx;
+  border: 1rpx solid whitesmoke;
+  border-radius: 10rpx;
+}
+/*搜索图标*/
+.img-search{
+  width:40rpx;
+  height: 40rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+/*搜索框输入*/
+.serach input{
+  font-size: 15rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+}
+/*搜索框输入字体*/
+.place-holder{
+  font-size:15px;
+  color:grey;
+  padding-left: 20rpx;
+  text-align: center;
+}
+.search-panel{
+  position: absolute;
+  top: 80rpx;
+}
+.search-title{
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-weight: bolder;
+}
+.hot-search{
+  display: flex;
+  flex-direction: row;
+}
+.hot-search text{
+  display: inline;
+  margin:15rpx 15rpx 15rpx 35rpx;
+  padding: 15rpx;
+  background-color: #F4F4F4;
+  color: black;
+  border-bottom: 1px solid #F4F4F4;
+  border-radius: 20rpx;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*取消框*/
+.close{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:20%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  
+}
+.close text{
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  color: #136DFF;
+  font-weight: bold;
+  padding-left: 40rpx;
+  
+}
+/*用户栏
+.userinfo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10rpx 5rpx;
+  padding: 35rpx 0;
+  border-radius: 10rpx;
+  background: -webkit-linear-gradient(grey,black);
+}
+.userinfo-avatar{
+  overflow:hidden;
+  display:block;
+  width: 130rpx;
+  height: 130rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  color: #aaa;
+  font-size: 30rpx;
+  font-weight: 500;
+}*/
+
+
+/*navbar页面*/
+.page {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  
+}
+ 
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 85rpx;
+  
+  font-size: 30rpx;
+  
+}
+.tab-item {
+  width: 25%;
+  text-align: center;
+  color:#777;
+  font-weight: bold;
+  
+}
+.swiper {
+  height: 1000px;
+  background: white;
+ 
+}
+.on {
+  color: #136DFF;
+  border-bottom: 3rpx solid  rgba(19, 110, 255, 0.699);
+  border-radius: 1rpx;
+}
+
+/*我的提问*/
+.quiz{
+  display: flex;
+  line-height: 180rpx;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: #aaa;
+  font-weight: 500;
+
+}
+.quiz-list{
+  flex-direction: column;
+  display: flex;
+  margin: 20rpx 0 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+}
+.quiz-list .title{
+  font-size: 18px;
+   font-weight: 500;
+   color:#333;
+   margin-bottom: 5px;
+   margin-left: 5px;
+}
+.quiz-list .detail{
+  display: flex;
+   font-size: 14px;
+   margin-top: 15px;
+   margin-left: 10px;
+   align-items: center;
+   color: #666;
+}
+
+/*我的回答*/
+.question{
+  display: flex;
+  line-height: 180rpx;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: #aaa;
+  font-weight: 500;
+
+}
+.answer-list{
+  flex-direction: column;
+  display: flex;
+  margin: 20rpx 0 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+}
+.answer-list .answerTitle{
+  font-size: 15px;
+   font-weight: 500;
+   color:#333;
+   margin-bottom: 5px;
+   margin-left: 5px;
+}
+.answer-list .answerDetail{
+  display: flex;
+   font-size: 14px;
+   margin-top: 5px;
+   margin-left: 8px;
+   align-items: center;
+   color: #666;
+   font-weight: 400;
+}
+
+/*收藏夹、收藏列表*/
+.collection{
+  display: flex;
+  line-height: 150rpx;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: #aaa;
+  font-weight: 500;
+  font-size: 35rpx;
+}
+.list{
+  margin-top:5rpx;
+}
+.list_head{
+    border-bottom: 1px solid;
+    border-color: whitesmoke;
+    padding: 10px;
+    font-size: 30rpx;
+    color:#aaa;
+    font-weight: 500;
+    
+}
+.display_show{
+    display: block;
+    border-bottom: 1px solid;
+    border-color:whitesmoke;
+    padding: 10px;
+    font-size: 28rpx;
+    color: #aaa;
+    font-weight: 500;
+}
+.display_none{
+    display: none;
+}
+
+/*最近点赞*/
+.like{
+  display: flex;
+  line-height: 180rpx;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  color: #aaa;
+  font-weight: 500;
+
+}

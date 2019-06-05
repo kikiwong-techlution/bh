@@ -1,0 +1,19 @@
+<!--pages/music/music.wxml-->
+<import src="music-item/music-item-tpl.wxml"/>
+<import src="banner-item/banner-item-tpl.wxml"/>
+<view class="banner">
+  <swiper indicator-dots='true' autoplay='true' interval='5000'>
+    <block wx:for="{{musicList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+      <swiper-item catchtap="onTapToPlaying" data-music-id="{{item.musicId}}">
+        <template is="bannerTpl" data="{{...item}}"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view>
+  <block wx:for="{{musicList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+    <view catchtap="onTapToPlaying" data-music-id="{{item.musicId}}">
+      <template  is="musicTpl" data="{{...item}}" />
+    </view>
+  </block>
+</view>

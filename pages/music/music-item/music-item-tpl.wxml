@@ -1,0 +1,14 @@
+<template name="musicTpl">
+<view class="music-container" >
+      <view class="music-number">
+        <text >{{musicId}}</text>
+      </view>
+      <view class="music-img">
+        <image src="{{coverImg}}" mode="aspectFit"></image>
+      </view>
+      <view class="music-title">
+        <text>{{title}}</text>
+        <text class="singer">{{singer}}</text>
+      </view>
+    </view>
+</template>

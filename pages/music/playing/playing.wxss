@@ -1,0 +1,79 @@
+/* pages/music/playing/playing.wxss */
+page{
+  background: -webkit-linear-gradient(top,#fdfbfb,#ebedee);
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.content .t1{
+  font-size: 38rpx;
+  font-weight: 600;
+  color:#333;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  width:62%;
+
+}
+.content .t2{
+  display: flex;
+   font-size: 34rpx;
+   line-height: 16px;
+   margin-top: 10rpx;
+   align-items: center;
+   color: #666;
+
+}
+.content image{
+  width: 600rpx;
+  height: 600rpx;
+  border:1px solid rgba(171, 190, 221, 0.37);
+  border-radius: 40rpx; 
+  margin-top: 80rpx;
+  margin-bottom: 30rpx;
+  padding: 30rpx;
+}
+.playing{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 100rpx;
+  
+}
+.playing view{
+  width: 100%;
+}
+.start-stop{
+  width:130rpx;
+  height:130rpx;
+  padding-bottom: 80rpx;
+}
+/*上一首、开始/暂停、下一首样式
+
+.playing view{
+  width: 33.4%;
+  
+}
+
+.last{
+  width:90rpx;
+  height: 90rpx;
+  padding-top: 20rpx;
+}
+.start-stop{
+  width:130rpx;
+  height:130rpx;
+  
+}
+.next{
+  width:90rpx;
+  height: 90rpx;
+  padding-top: 20rpx;
+}*/

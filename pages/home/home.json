@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "user-card": "/components/UserCard/UserCard",
+    "menus-list": "/components/Menus/Menus"
+  },
+  "navigationBarTextStyle": "black",
+  "navigationBarTitleText": "我的"
+}

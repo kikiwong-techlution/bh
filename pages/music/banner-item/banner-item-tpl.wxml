@@ -1,0 +1,5 @@
+<template name="bannerTpl">
+  <view class="banner-container">
+   <image src="{{coverImg}}"></image>
+  </view>
+</template>
