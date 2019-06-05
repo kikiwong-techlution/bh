@@ -1,0 +1,55 @@
+/*热榜内容*/
+.hot-container{
+  flex-direction: row;
+  display: flex;
+  margin: 20rpx 0 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+ }
+ .hot-number{
+   font-weight: 600;
+   font-size: 23px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(230, 59, 59);
+   width:5%;
+   padding-left: 10px;
+ }
+ .hot-title{
+   font-size: 18px;
+   font-weight: 600;
+   color:#333;
+   margin-bottom: 10px;
+   margin-left: 5px;
+   width:60%;
+ }
+ .hot-img{
+   width:35%;
+  
+ }
+ .hot-img image{
+   width: 100%;
+   height: 196rpx;
+   padding-left: 10rpx;
+   border-bottom: 1px solid white;
+  border-radius: 10px;
+ }
+.hot-like{
+  display: flex;
+   font-size: 13px;
+   line-height: 16px;
+   margin-top: 20px;
+   margin-left: 5px;
+   align-items: center;
+   color: #666;
+}
+.t2{
+  color:rgb(253, 80, 0);
+}
+.t3{
+  color: rgb(231, 116, 49);
+}
+.t3{
+  color: rgb(245, 177, 50);
+}
+

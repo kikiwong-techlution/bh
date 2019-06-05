@@ -1,0 +1,85 @@
+<import src="item/commend-item/commend-item-tpl.wxml"/>
+<import src="item/hot-item/hot-item-tpl.wxml"/>
+<view class="con">
+  <!--搜索框-->
+  <view class="search">
+    <image class="img-search" src="/image/icon/search.png" ></image>
+    <input type="text" placeholder-class="place-holder" placeholder="输入你想要的内容" 
+    bindfocus="onBindFocus" bindconfirm="onBindConfirm" value="{{inputValue}}"></input>
+    
+  </view>
+  <!--关闭框-->
+  <view class="close"  wx:if="{{searchPanelShow}}">
+    <text catchtap="onCancelImgTap">取消</text>
+  </view>
+
+  <!--提问框-->
+  <view class="quiz" catchtap="onTabJump" wx:if="{{pageShow}}"> 
+    <image class="" src="/image/icon/quiz.png"></image>
+    <text class="quiz-text">提问</text>
+  </view>
+</view>
+
+<view class="page" wx:if="{{pageShow}}">
+<!--顶部导航栏-->
+<view class="swiper-tab">
+ 
+  <view class="tab-item {{currentTab==0 ? 'on' : ''}}" data-current="0" 
+  bindtap="switchNav">推荐</view>
+ 
+  <view class="tab-item {{currentTab==1 ? 'on' : ''}}" data-current="1" 
+  bindtap="switchNav">热榜</view>
+ 
+</view>
+ 
+ 
+<!--内容主体-->
+<swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+  
+  <!--推荐-->
+  <swiper-item >
+    <view style='overflow:scroll'>
+    <scroll-view scroll-y style='height:98%;'>
+      <block wx:for="{{commendList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+        <view catchtap="onTapToDetail" data-answer-id="{{item.answerId}}">
+          <template  is="commendTpl" data="{{...item}}" />
+        </view>
+      </block>
+    </scroll-view>
+    </view>
+  </swiper-item>
+
+  <!--热榜-->
+  <swiper-item>
+    <view style='overflow:scroll'>
+    <scroll-view scroll-y style="height:98%">
+      <block wx:for="{{hotList}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+        <view catchtap="onTapToProblem" data-hot-id="{{item.hotId}}">
+          <template  is="hotTpl" data="{{...item}}" />
+        </view>
+      </block>
+  </scroll-view> 
+  </view> 
+  </swiper-item>
+</swiper>
+ 
+</view>
+
+ <!--搜索面板-->
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <view>
+    <text class="search-title">广金乎热搜</text>
+    <view class="hot-search">
+      <text  catchtap="">复联4 正式预告片</text>
+      <text  catchtap="">歌手</text>
+      
+    </view>
+    <view class="hot-search">
+      <text  catchtap="">小米9系列开售叫停</text>
+    </view>
+  </view>
+  <view>
+    <text class="search-title">搜索历史</text>
+    
+  </view>
+</view>

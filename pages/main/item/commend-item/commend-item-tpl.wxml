@@ -1,0 +1,15 @@
+<template name="commendTpl">
+  <!--推荐1-->
+  <view class="commend-container">
+  
+    <text class="commend-title">{{title}}</text>
+    <image class="commend-img" src="{{commendImg}}" mode="aspectFill"></image>
+    <text class="commend-content">{{content}}</text>
+    <view class="commend-like">
+      <image class="like" src="/image/icon/like.png" />
+      <text>{{likeNum}}</text>
+      <image class="comment" src="/image/icon/comment.png" />
+      <text>{{commentNum}}</text>
+    </view>
+  </view>
+</template>

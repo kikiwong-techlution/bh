@@ -1,0 +1,16 @@
+<template name="problemTpl">
+  <view class="answer-container">
+    <view class="author-box">
+      <image src="{{author_img}}"></image>
+      <text>{{author}}</text>
+    </view>
+    <image class="answerImg" src="{{ans_img}}" mode="aspectFill">推荐预览图片answerImg</image>
+    <text class="answer-content">{{content}}</text>
+    <view class="answer-item">
+      <image class="like" src="/image/icon/like.png" />
+      <text>{{likeNum}}</text>
+      <image class="comment" src="/image/icon/comment.png" />
+      <text>{{commentNum}}</text>
+    </view>
+  </view>
+</template>

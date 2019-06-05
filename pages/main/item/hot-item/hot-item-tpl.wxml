@@ -1,0 +1,18 @@
+<template name="hotTpl">
+<view class="hot-container" >
+    <view class="hot-number">
+      <text class='t1' wx:if="{{hotId==1}}">{{hotId}}</text>
+      <text class='t2' wx:elif="{{hotId==2}}">{{hotId}}</text>
+      <text class='t3' wx:elif="{{hotId>=3}}">{{hotId}}</text>
+      <text class='t4' wx:else>{{hotId}}</text>
+    </view>
+    <view class="hot-title">
+      <text>{{title}}</text>
+      <text class="hot-like">{{hotNum}}</text>
+    </view>
+    <view class="hot-img">
+      <image src="{{hotImg}}" mode="aspectFit"></image>
+    </view>
+</view>
+</template>
+

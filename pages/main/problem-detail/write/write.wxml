@@ -1,0 +1,13 @@
+<!--热榜内所有回答中的“写回答”入口-->
+
+<view class='quiz-con'>
+  <view class="answerTitle">
+    <text bindtap="titleTap">{{hot.title}}</text>
+  </view>
+  <view>
+    <textarea class='answerDetail' value="我的回答：" maxlength='-1'placeholder='回答问题' placeholder-class='placeholder-1'  bindinput="detailInput"></textarea>
+  </view>
+</view>
+<view class="sent" >
+    <text catchtap="onAnswerJump" data-hot-id="{{item.hotId}}">发 布</text>
+</view>

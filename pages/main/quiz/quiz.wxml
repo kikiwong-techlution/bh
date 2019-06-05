@@ -1,0 +1,13 @@
+<!--pages/main/quiz/quiz.wxml-->
+
+  <block>
+    <view class='quiz-con' >
+      <textarea class='title' value='' maxlength='-1'placeholder='输入问题并以问号结尾' placeholder-class='placeholder' bindinput="titleInput" ></textarea>
+      <textarea class='detail' value='问题描述：' maxlength='-1'placeholder='问题描述（选填）' placeholder-class='placeholder-1' bindinput="detailInput" ></textarea>
+
+      <view class="sent" >
+          <text  catchtap="onProblemJump" class="proId" id="1">发 布</text>
+      </view>
+  </view>
+  </block>
+

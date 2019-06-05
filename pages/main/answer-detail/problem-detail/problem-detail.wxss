@@ -1,0 +1,254 @@
+/* pages/main/answer-detail/problem-detail/problem-detail.wxss */
+@import "/pages/main/item/problem-item/problem-item-tpl.wxss";
+.con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height: 70rpx;
+}
+/*搜索框*/
+.search{
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  width:94%;
+  height: 65rpx;
+  margin-left: 20rpx;
+  background-color: whitesmoke;
+  margin-top: 10rpx;
+  border: 1rpx solid whitesmoke;
+  border-radius: 10rpx;
+}
+/*搜索图标*/
+.img-search{
+  width:40rpx;
+  height: 40rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+/*搜索框输入*/
+.serach input{
+  font-size: 15rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  
+}
+/*搜索框输入字体*/
+.place-holder{
+  font-size:15px;
+  color:grey;
+  padding-left: 20rpx;
+  text-align: center;
+}
+.search-panel{
+  position: absolute;
+  top: 80rpx;
+}
+.search-title{
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-weight: bolder;
+}
+.hot-search{
+  display: flex;
+  flex-direction: row;
+}
+.hot-search text{
+  display: inline;
+  margin:15rpx 15rpx 15rpx 35rpx;
+  padding: 15rpx;
+  background-color: #F4F4F4;
+  color: black;
+  border-bottom: 1px solid #F4F4F4;
+  border-radius: 20rpx;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*取消框*/
+.close{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:20%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  
+}
+.close text{
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  color: #136DFF;
+  font-weight: bold;
+  padding-left: 40rpx;
+  
+}
+
+.problem-con {
+  display: flex;
+  flex-direction: column;
+  margin: 25rpx 0 10rpx;
+  width: 96%;
+  background-color: #fff;
+  padding-bottom: 5px;
+}
+.title{
+  font-size: 20px;
+   font-weight: 600;
+   color:#333;
+   margin-bottom: 15rpx;
+   margin-left: 20rpx;
+   
+   
+}
+/*问题描述*/
+.problem-des{
+  height: 100rpx;
+  color: #333;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+  letter-spacing: 3rpx;
+  font-size:15px;
+ 
+}
+.problem-des .t1{
+  color: rgb(145, 143, 143);
+  font-size: 16px;
+}
+
+.item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  margin-top: 25rpx;
+  background-color: white;
+}
+.item-text{
+  text-align: center;
+  margin-left: 13rpx;
+  font-size: 12px;
+  color:rgb(90, 90, 90);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item-text text{
+  padding-left: 20rpx;
+  font-weight: 500;
+}
+
+/*关注问题*/
+.addPro {
+  display: inline-block;
+  flex-direction: row;
+  color: #919191;
+  margin-right: 38rpx;
+  padding-left:15rpx;
+  padding-right: 15rpx;
+  line-height: 50rpx;
+  background-color:#136DFF;
+  border: 1px solid #136DFF;
+  border-radius: 5px;
+}
+.addPro text{
+  text-align: center;
+  padding-left: 5rpx;
+  font-size: 13px;
+  color:white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:bold;
+}
+.addPro image{
+  width:25rpx;
+  height: 25rpx;
+}
+
+.addPro1 {
+  display: inline-block;
+  flex-direction: row;
+  color: #919191;
+  margin-right: 38rpx;
+  padding-left:15rpx;
+  padding-right: 15rpx;
+  line-height: 50rpx;
+  background-color:white;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+.addPro1 text{
+  text-align: center;
+  padding-left: 5rpx;
+  font-size: 13px;
+  color:#136DFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight:bold;
+}
+.addPro1 image{
+  width:25rpx;
+  height: 25rpx;
+}
+
+swiper{
+  width: 100%;
+  height: 900rpx;
+}
+
+.invite-write-con{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 2px solid whitesmoke;
+  padding-top: 20rpx;
+
+}
+.invite{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid whitesmoke;
+  
+  
+}
+.invite text{
+  text-align: center;
+  padding-left: 15rpx;
+  font-size: 27rpx;
+  color:rgb(90, 90, 90);
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.invite image{
+  width:33rpx;
+  height: 33rpx;
+}
+.write{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+.write text{
+  text-align: center;
+  padding-left: 15rpx;
+  font-size: 27rpx;
+  color:rgb(90, 90, 90);
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+.write image{
+  width:33rpx;
+  height: 33rpx;
+}

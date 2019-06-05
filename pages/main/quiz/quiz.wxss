@@ -1,0 +1,50 @@
+/* pages/main/quiz/quiz.wxss */
+
+.title {
+  font-size: 35rpx;
+  padding: 3%;
+  width: 94%;
+  height: 50px;
+  border-top: 1px solid whitesmoke;
+  
+}
+.detail {
+  font-size: 30rpx;
+  padding: 3%;
+  width: 94%;
+  height: 200px;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  
+}
+.placeholder{
+  font-size: 35rpx;
+  color: gray;
+}
+.placeholder-1{
+  font-size: 30rpx;
+  color: gray;
+}
+.sent{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  width:20%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  
+}
+.sent text{
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  text-align: center;
+  color: #136DFF;
+  border: 1px solid #136DFF;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 3px 8px;
+  margin-top: 20rpx;
+  
+}

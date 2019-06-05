@@ -1,0 +1,51 @@
+/*推荐内容*/
+ .commend-container{
+  flex-direction: column;
+  display: flex;
+  margin: 20rpx 0 40rpx;
+  background-color: #fff;
+  border-bottom: 5px solid whitesmoke;
+  padding-bottom: 18px;
+ }
+ .commend-title{
+   font-size: 16px;
+   font-weight: 600;
+   color:#333;
+   margin-bottom: 10px;
+   margin-left: 10px;
+   margin-right: 5px;
+ }
+ .commend-img{
+   width: 100%;
+   height: 400rpx;
+   margin-bottom: 15px;
+ }
+ .commend-content{
+   color: #666;
+   font-size: 26rpx;
+   margin-bottom: 20rpx;
+   margin-left: 20rpx;
+   letter-spacing: 2rpx;
+   line-height: 40rpx;
+ }
+ .commend-like{
+   display: flex;
+   flex-direction: row;
+   font-size: 13px;
+   line-height: 16px;
+   margin-left: 10px;
+   align-items: center;
+ }
+ .comment{
+   height: 16px;
+   width: 16px;
+   margin-right: 8px;
+ }
+ .like{
+    height: 18px;
+   width: 18px;
+   margin-right: 6px;
+ }
+.commend-like text{
+  margin-right: 20px;
+}

@@ -1,0 +1,83 @@
+<!--pages/main/answer-detail/answer-detail.wxml-->
+<view >
+  <!--问题标题-->
+  <view class='title'>
+    <text>{{commend.title}}</text>
+  </view>
+  <!--写回答、查看回答栏-->
+  <view class='answer'>
+    <view class='write' catchtap="onTabToWrite" data-answer-id="{{commend.answerId}}">
+      <image src='/image/icon/write.png'></image>
+      <text>写回答</text>
+    </view>
+    <view class='read' catchtap="onAnswerTap" data-answer-id="{{commend.answerId}}" > 
+      <text>查看全部回答</text>
+      <image src='/image/icon/right-1.png'></image>
+    </view>
+  </view>
+  <!--作者头像、名称、回答内容-->
+  <view class="author-date">
+    <view class="author-box">
+      <image class="avatar" src="{{commend.avatar}}"></image>
+      <text class="author">{{commend.author}}</text>
+    </view>
+    <view catchtap="onAddTap" data-answer-id="{{commend.answerId}}">
+      <view class="add1" wx:if="{{commend.addStatus}}">
+        <image src="/image/icon/addPro1.png"></image>
+        <text >已关注</text>
+      </view> 
+      <view class="add" wx:else="{{commend.addStatus}}">
+        <image src="/image/icon/add-1.png"></image>
+        <text >\t关注</text>
+      </view>
+    </view>
+  </view>
+  <!--回答内容
+  <view class='detail'>
+    <text>{{commend.detail}}</text>
+  </view>-->
+  
+  <scroll-view class="detail" scroll-y >
+    <view class="detail-img" wx:if="{{commend.detailImg.length!=0}}">
+            <block wx:for="{{commend.detailImg}}" wx:for-item="img" wx:for-index="imgIdx" wx:key="">
+              <image src="{{img}}" mode="aspectFill"  data-comment-idx="{{idx}}" data-img-idx="{{imgIdx}}"></image>
+            </block>
+          </view>
+    <text>{{commend.detail}}</text>
+    <text style='color:red;'>{{commend.detail1}}</text>
+  </scroll-view>
+</view>
+
+  <!--赞同、感谢、收藏、评论-->
+  <view class="tool">
+    
+    <view class="tool-item like" catchtap="onLikeTap" data-answer-id="{{commend.answerId}}">
+      <image wx:if="{{commend.likeStatus}}" src="/image/icon/like-1.png"></image>
+      <image wx:else src="/image/icon/like.png"></image>
+      <text wx:if="{{commend.likeStatus}}" class="t1"> {{commend.likeNum}}</text>
+      <text wx:else>{{commend.likeNum}}</text>
+    </view>
+   
+    <view class="tool-item heart" catchtap="onHeartTap" data-answer-id="{{commend.answerId}}">
+      <image wx:if="{{commend.heartStatus}}" src="/image/icon/heart-2.png" />
+      <image wx:else src="/image/icon/heart.png"></image>
+      <text wx:if="{{commend.heartStatus}}" class="t1">已感谢</text>
+      <text wx:else>感谢</text>
+      
+    </view>
+
+    <view class="tool-item collection" catchtap="onCollectionTap" data-answer-id="{{commend.answerId}}">
+      <image wx:if="{{commend.collectionStatus}}" src="/image/icon/collection-4.png"  style="height:37rpx;width:37rpx;"></image>
+      <image wx:else src="/image/icon/collection.png" style="height:37rpx;width:37rpx;"></image>
+      <text wx:if="{{commend.collectionStatus}}" class="t1">已收藏</text>
+      <text wx:else>收藏</text>
+    </view>
+
+    <view class="tool-item comment" catchtap="onCommentTap" data-answer-id="{{commend.answerId}}">
+      <image src="/image/icon/comment.png" style="height:37rpx;width:37rpx;"></image>
+      
+      <text >{{commend.commentNum}}</text>
+    </view>
+  </view>
+
+

@@ -1,0 +1,81 @@
+<!--pages/main/problem-detail/problem-detail.wxml-->
+<import src="../item/problem-item/problem-item-tpl.wxml"/>
+<view class="con">
+  <!--搜索框-->
+  <view class="search">
+    <image class="img-search" src="/image/icon/search.png" ></image>
+    <input type="text" placeholder-class="place-holder" placeholder="输入你想要的内容" 
+    bindfocus="onBindFocus" bindconfirm="onBindConfirm" value="{{inputValue}}"></input>
+    
+  </view>
+  <!--关闭框-->
+  <view class="close"  wx:if="{{searchPanelShow}}">
+    <text catchtap="onCancelImgTap">取消</text>
+  </view>
+</view>
+
+ <!--搜索面板-->
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <view>
+    <text class="search-title">广金乎热搜</text>
+    <view class="hot-search">
+      <text  catchtap="">复联4 正式预告片</text>
+      <text  catchtap="">歌手</text>
+      
+    </view>
+    <view class="hot-search">
+      <text  catchtap="">小米9系列开售叫停</text>
+    </view>
+  </view>
+  <view>
+    <text class="search-title">搜索历史</text>
+    
+  </view>
+</view>
+
+<view class="problem-con" wx:if="{{pageShow}}">
+  <text class="title">{{hot.title}}</text>
+  <scroll-view class="problem-des" scroll-y>
+    <text class="t1">问题描述：</text>
+    <text>{{hot.problem_des}}</text>
+  </scroll-view>
+  
+  <view class="item">
+   <view class="item-text">
+      <text class="addProNum">1,369 人关注</text>
+      <text class="comment">51 条评论</text>
+    </view>
+    <view catchtap="onaddProTap" data-hot-id="{{hot.hotId}}">
+    <view class="addPro1" wx:if="{{hot.addProStatus}}">
+      <image src="/image/icon/addPro1.png"></image>
+      <text >\t已关注</text>
+    </view> 
+    <view class="addPro" wx:else="{{hot.addProStatus}}">
+      <image src="/image/icon/add-1.png"></image>
+      <text >关注问题</text>
+    </view>
+  </view>
+  </view>
+</view>
+
+<!--邀请回答、写回答-->
+<view class="invite-write-con" wx:if="{{pageShow}}">
+  <view class="invite">
+    <text>邀请回答</text>
+  </view>
+  <view class="write" catchtap="onTabToWrite" data-hot-id="{{hot.hotId}}">
+    <text>写回答</text>
+  </view>
+</view>
+
+<!--回答轮播图-->
+<view wx:if="{{pageShow}}">
+  <swiper indicator-dots='true' autoplay='true' interval='5000'>
+  <block wx:for="{{answers}}" wx:for-item="item" wx:for-index="idx" wx:key="">
+    <swiper-item>
+      <template is="problemTpl" data="{{...item}}"/>
+    </swiper-item>
+  </block>
+ 
+  </swiper>
+</view>

@@ -1,0 +1,200 @@
+@import "item/commend-item/commend-item-tpl.wxss";
+@import "item/hot-item/hot-item-tpl.wxss";
+
+.con{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  
+}
+/*搜索框*/
+.search{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:80%;
+  height: 60rpx;
+  margin-left: 20rpx;
+  background-color: whitesmoke;
+  margin-top: 10rpx;
+  border: 1rpx solid whitesmoke;
+  border-radius: 10rpx;
+}
+/*搜索图标*/
+.img-search{
+  width:40rpx;
+  height: 40rpx;
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+}
+/*搜索框输入*/
+.serach input{
+  font-size: 15rpx;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left: 15rpx;
+  
+}
+/*搜索框输入字体*/
+.place-holder{
+  font-size:15px;
+  color:grey;
+  text-align: center;
+}
+.search-panel{
+  position: absolute;
+  top: 80rpx;
+}
+.search-title{
+  display: flex;
+  margin-left: 50rpx;
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-weight: bolder;
+}
+.hot-search{
+  display: flex;
+  flex-direction: row;
+}
+.hot-search text{
+  display: inline;
+  margin:15rpx 15rpx 15rpx 35rpx;
+  padding: 15rpx;
+  background-color: #F4F4F4;
+  color: black;
+  border-bottom: 1px solid #F4F4F4;
+  border-radius: 20rpx;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/*取消框*/
+.close{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:20%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  
+}
+.close text{
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  color: #136DFF;
+  font-weight: bold;
+  padding-left: 40rpx;
+  
+}
+
+/*提问*/
+.quiz{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width:20%;
+  height: 70rpx;
+  margin-top: 10rpx;
+  
+}
+/*提问文字*/
+.quiz-text{
+  padding-right: 15rpx;
+  font-size: 17px;
+  color:#136DFF;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*提问图标*/
+.quiz image{
+  width:45rpx;
+  height: 45rpx;
+  padding-left: 15rpx;
+}
+
+/*navbar页面*/
+.page {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  
+}
+ 
+.swiper-tab {
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-bottom: 3rpx solid whitesmoke;
+
+}
+.tab-item {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  color:#777;
+  font-weight: bold;
+}
+.swiper {
+  height: 2300rpx;
+  background: white;
+  
+ 
+}
+.on {
+  color: black;
+  border-bottom: 3rpx solid black;
+  border-radius: 1rpx;
+}
+ swiper-item{
+   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+ }
+ 
+
+/*热榜内容*/
+.hot-container{
+  flex-direction: row;
+  display: flex;
+  margin: 20rpx 0 40rpx;
+  background-color: #fff;
+  border-bottom: 1px solid whitesmoke;
+  padding-bottom: 10px;
+ }
+ .hot-number{
+   font-weight: 600;
+   font-size: 23px;
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(230, 59, 59);
+   width:5%;
+   padding-left: 10px;
+ }
+ .hot-title{
+   font-size: 18px;
+   font-weight: 600;
+   color:#333;
+   margin-bottom: 10px;
+   margin-left: 5px;
+   width:60%;
+ }
+ .hot-img{
+   width:35%;
+  
+ }
+ .hot-img image{
+   width: 100%;
+   height: 196rpx;
+   border-bottom: 1px solid white;
+  border-radius: 10px;
+ }
+.hot-like{
+  display: flex;
+   font-size: 13px;
+   line-height: 16px;
+   margin-top: 20px;
+   margin-left: 5px;
+   align-items: center;
+   color: #666;
+}
