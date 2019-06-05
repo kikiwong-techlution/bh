@@ -4,8 +4,8 @@
 
 ## 环境要求
 * 1、小程序开发工具
-    * 推荐使用型号：iphoneX
-
+   * 推荐模拟器使用型号：iphoneX、iphone678plus
+   * 联网使用
 * 2、编辑器vscode、webstorm
 
 
